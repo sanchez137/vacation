@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Force require user authentication to access all routes.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function require_login_help($route_name, RouteMatchInterface $route_match) {
+  $output = NULL;
+
+  switch ($route_name) {
+    case 'help.page.require_login':
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Require user authentication (login) on ALL pages, regardless of user role permission settings.') . '</p>';
+      $output .= '<h3>' . t('Features') . '</h3>';
+      $output .= '<dl>';
+      $output .= '  <dt>' . t('Require user login to access any site pages or content') . '</dt>';
+      $output .= '  <dt>' . t('Exclude customizable paths from login requirement') . '</dt>';
+      $output .= '  <dt>' . t('Configure access denied message and login redirect path') . '</dt>';
+      $output .= '</dl>';
+      $output .= '<h3>' . t('Installation') . '</h3>';
+      $output .= '<dl>';
+      $output .= '  <dt>' . t('Install and enable "Require Login" module') . '</dt>';
+      $output .= '  <dt>' . t('Set permissions for "Require Login" administration') . '</dt>';
+      $output .= '  <dt>' . t('Set configurations: Admin > Config > People > Require Login') . '</dt>';
+      $output .= '</dl>';
+
+      return $output;
+  }
+}

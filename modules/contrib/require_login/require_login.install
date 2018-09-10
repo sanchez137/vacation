@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * require_login.install
+ */
+
+/**
+ * Implements hook_install().
+ */
+function require_login_install() {
+  module_set_weight('require_login', -1000);
+}
+
+/**
+ * Flush caches for new translatable configurations.
+ */
+function require_login_update_8101() {
+  drupal_flush_all_caches();
+}

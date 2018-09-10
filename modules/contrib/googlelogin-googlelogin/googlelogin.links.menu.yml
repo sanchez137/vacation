@@ -1,0 +1,6 @@
+googlelogin.admin_config:
+  title: 'Google OAuth Configurations'
+  description: 'Update the Google OAuth Credentials for SSO Login'
+  parent: system.admin_config_development
+  route_name: googlelogin.admin_config
+  weight: 100

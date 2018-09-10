@@ -1,0 +1,21 @@
+googlelogin.admin_config:
+  path: '/admin/config/googlelogin'
+  defaults:
+    _title: 'Google OAuth Credentials'
+    _form: 'Drupal\googlelogin\Plugin\Form\GoogleOAuthCredentialsForm'
+  requirements:
+    _permission: 'administer site configuration'
+googlelogin.icon_view:
+  path: '/admin/config/googlelogin/view'
+  defaults:
+    _title: 'Google Icon Settings'
+    _form: 'Drupal\googlelogin\Plugin\Form\GoogleIconSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+googlelogin.account_login:
+  path: '/google_oauth_login'
+  defaults:
+    _title: 'Google OAuth Login'
+    _controller: 'Drupal\googlelogin\Controller\GoogleOAuthLoginController::googleOAuthUserLogin'
+  requirements:
+    _permission: 'access content'
