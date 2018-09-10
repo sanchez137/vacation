@@ -1,0 +1,11 @@
+name: 'Require Login'
+description: 'Require user authentication (login) on ALL pages.'
+type: module
+# core: 8.x
+configure: require_login.admin
+
+# Information added by Drupal.org packaging script on 2018-05-23
+version: '8.x-1.12'
+core: '8.x'
+project: 'require_login'
+datestamp: 1527096788

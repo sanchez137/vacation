@@ -1,0 +1,3 @@
+administer require login:
+  title: 'Administer Require Login'
+  description: 'Configure required user authentication (login) settings.'

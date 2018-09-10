@@ -1,0 +1,13 @@
+require_login.config:
+  type: config_object
+  label: 'Require Login'
+  mapping:
+    deny_message:
+      type: text
+      label: 'Access Denied Message'
+    excluded_paths:
+      type: text
+      label: 'Exclude Paths'
+    auth_path:
+      type: text
+      label: 'User Authentication (Login) Path'

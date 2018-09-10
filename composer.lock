@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e8e4ec186f34ec3449d65d924f943580",
+    "content-hash": "b247b274b85b7ef5490efb57bd59b366",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -720,6 +720,53 @@
             }
         },
         {
+            "name": "drupal/better_login_form_config",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/better_login_form_config",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/better_login_form_config-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "b4c978309b7898ecf0dd6c27b48d0ad69259e245"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1531556021",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ashutosh.mishra",
+                    "homepage": "https://www.drupal.org/user/3565900"
+                }
+            ],
+            "description": "you can configure the label, description and login button of the default user login form ",
+            "homepage": "https://www.drupal.org/project/better_login_form_config",
+            "support": {
+                "source": "http://cgit.drupalcode.org/better_login_form_config"
+            }
+        },
+        {
             "name": "drupal/bootstrap",
             "version": "3.12.0",
             "source": {
@@ -782,6 +829,103 @@
                 "docs": "https://drupal-bootstrap.org",
                 "issues": "https://www.drupal.org/project/issues/bootstrap",
                 "irc": "irc://irc.freenode.org/drupal-bootstrap"
+            }
+        },
+        {
+            "name": "drupal/googlelogin-googlelogin",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/googlelogin",
+                "reference": "8.x-3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/googlelogin-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "e8bd570c14be0fa6e1ca07bd112dfb73ee9f5930"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.2",
+                    "datestamp": "1501684744",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "suresh.senthatti",
+                    "homepage": "https://www.drupal.org/user/2668481"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/googlelogin",
+            "support": {
+                "source": "http://cgit.drupalcode.org/googlelogin"
+            }
+        },
+        {
+            "name": "drupal/require_login",
+            "version": "1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/require_login",
+                "reference": "8.x-1.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/require_login-8.x-1.12.zip",
+                "reference": "8.x-1.12",
+                "shasum": "cf6dc2f74dc72f310edaca23c2af443672b91285"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.12",
+                    "datestamp": "1527096780",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey C.",
+                    "homepage": "https://www.drupal.org/user/1290564"
+                },
+                {
+                    "name": "robphillips",
+                    "homepage": "https://www.drupal.org/user/459772"
+                }
+            ],
+            "description": "Require user authentication (login) on ALL pages.",
+            "homepage": "https://www.drupal.org/project/require_login",
+            "support": {
+                "source": "http://cgit.drupalcode.org/require_login"
             }
         },
         {
